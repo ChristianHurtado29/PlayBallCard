@@ -11,6 +11,7 @@ struct OffensiveStatistics {
     let hits: Int
     let strikeouts: Int
     let walks: Int
+    let hitByPitch: Int
     let battingAverage: Double
     let ops: Double
     let sacHits: Int
