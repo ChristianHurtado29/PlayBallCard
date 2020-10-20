@@ -20,6 +20,9 @@
 		136A54F7253E87A10066458F /* PitchingStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136A54F6253E87A10066458F /* PitchingStatistics.swift */; };
 		136A54FC253E89BD0066458F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136A54FB253E89BD0066458F /* Player.swift */; };
 		136A5501253E8AB20066458F /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136A5500253E8AB20066458F /* Position.swift */; };
+		136A5506253E8D070066458F /* GameSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136A5505253E8D070066458F /* GameSession.swift */; };
+		136A550B253E8D3A0066458F /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136A550A253E8D3A0066458F /* Team.swift */; };
+		136A5510253E93F00066458F /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136A550F253E93F00066458F /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		136A54F6253E87A10066458F /* PitchingStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchingStatistics.swift; sourceTree = "<group>"; };
 		136A54FB253E89BD0066458F /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		136A5500253E8AB20066458F /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		136A5505253E8D070066458F /* GameSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSession.swift; sourceTree = "<group>"; };
+		136A550A253E8D3A0066458F /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		136A550F253E93F00066458F /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +122,9 @@
 				136A54F6253E87A10066458F /* PitchingStatistics.swift */,
 				136A5500253E8AB20066458F /* Position.swift */,
 				136A54FB253E89BD0066458F /* Player.swift */,
+				136A550A253E8D3A0066458F /* Team.swift */,
+				136A550F253E93F00066458F /* Game.swift */,
+				136A5505253E8D070066458F /* GameSession.swift */,
 				136A54BD253E81560066458F /* ViewController.swift */,
 				136A54BF253E81560066458F /* Main.storyboard */,
 				136A54C2253E815A0066458F /* Assets.xcassets */,
@@ -279,7 +288,10 @@
 				136A54BE253E81560066458F /* ViewController.swift in Sources */,
 				136A54FC253E89BD0066458F /* Player.swift in Sources */,
 				136A54BA253E81560066458F /* AppDelegate.swift in Sources */,
+				136A5510253E93F00066458F /* Game.swift in Sources */,
 				136A5501253E8AB20066458F /* Position.swift in Sources */,
+				136A5506253E8D070066458F /* GameSession.swift in Sources */,
+				136A550B253E8D3A0066458F /* Team.swift in Sources */,
 				136A54BC253E81560066458F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

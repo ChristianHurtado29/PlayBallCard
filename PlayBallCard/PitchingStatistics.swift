@@ -10,6 +10,9 @@ import Foundation
 struct PitchingStatistics {
     let era: Double
     let strikeout: Int
+    let strikes: Int
+    let balls: Int
+    let pitchCount: Int
     let walks: Int
     let hitBatters: Int
     let runsAgainst: Int
@@ -17,5 +20,7 @@ struct PitchingStatistics {
     let wins: Int
     let losses: Int
     let saves: Int
+    let blownSaves: Int
+    let saveOpportunities: Int
     let holds: Int
 }

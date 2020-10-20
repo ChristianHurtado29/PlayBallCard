@@ -10,6 +10,7 @@ import Foundation
 struct Player {
     let name: (first: String, last: String)
     let number: Int
+    let gamesPlayed: Int
     let position: Position
     let offensiveStats: OffensiveStatistics
     let defensiveStats: DefensiveStatistics

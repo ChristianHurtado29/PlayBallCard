@@ -17,4 +17,6 @@ enum Position: String, CaseIterable{
     case leftField
     case centerField
     case rightField
+    case rover
+    case designatedHitter
 }
