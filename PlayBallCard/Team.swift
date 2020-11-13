@@ -8,8 +8,8 @@
 import Foundation
 
 struct Team {
-    let teamname: String
-    let players: [Player]
-    let wins: Int
-    let losses: Int
+    var teamname: String
+    var players: [Player]
+    var wins: Int
+    var losses: Int
 }

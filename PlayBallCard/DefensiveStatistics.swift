@@ -12,4 +12,5 @@ struct DefensiveStatistics {
     let putouts: Int
     let errors: Int
     let fieldingPct: Double
+    let fieldingChances: Int
 }

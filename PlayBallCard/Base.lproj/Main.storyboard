@@ -38,36 +38,96 @@
             </objects>
             <point key="canvasLocation" x="713.04347826086962" y="88.392857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Team Name View Controller-->
         <scene sceneID="J6K-4D-2o4">
             <objects>
-                <viewController id="6Hp-NO-OEd" sceneMemberID="viewController">
+                <viewController id="6Hp-NO-OEd" customClass="TeamNameViewController" customModule="PlayBallCard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZYx-ld-EaM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter home team name:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCn-bv-2YB">
-                                <rect key="frame" x="20" y="88" width="374" height="79"/>
+                                <rect key="frame" x="20" y="128" width="374" height="79"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Home team name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="czy-tV-frT">
-                                <rect key="frame" x="20" y="175" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Home team name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="czy-tV-frT">
+                                <rect key="frame" x="20" y="215" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56L-6e-DrA">
+                                <rect key="frame" x="152" y="695" width="110" height="55"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="Submit"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home team:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNh-EM-2eR">
+                                <rect key="frame" x="20" y="309" width="374" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaT-In-8Ox">
+                                <rect key="frame" x="20" y="357" width="374" height="39.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="er1-cm-b4a">
+                                <rect key="frame" x="20" y="426.5" width="374" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Away team:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcB-CO-90l">
+                                <rect key="frame" x="20" y="496.5" width="374" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JpJ-Ut-XKF">
+                                <rect key="frame" x="20" y="544.5" width="374" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Gul-Kt-OQH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="zcB-CO-90l" firstAttribute="top" secondItem="er1-cm-b4a" secondAttribute="bottom" constant="30" id="3ee-gA-d9g"/>
+                            <constraint firstItem="Gul-Kt-OQH" firstAttribute="trailing" secondItem="JpJ-Ut-XKF" secondAttribute="trailing" constant="20" id="7Xc-8U-jHX"/>
                             <constraint firstItem="Gul-Kt-OQH" firstAttribute="trailing" secondItem="DCn-bv-2YB" secondAttribute="trailing" constant="20" id="8og-LU-jiW"/>
+                            <constraint firstItem="rNh-EM-2eR" firstAttribute="leading" secondItem="Gul-Kt-OQH" secondAttribute="leading" constant="20" id="Bct-1S-iT9"/>
+                            <constraint firstItem="Gul-Kt-OQH" firstAttribute="trailing" secondItem="RaT-In-8Ox" secondAttribute="trailing" constant="20" id="Hca-HG-CoD"/>
+                            <constraint firstItem="Gul-Kt-OQH" firstAttribute="trailing" secondItem="czy-tV-frT" secondAttribute="trailing" constant="20" id="ItL-3X-rBc"/>
+                            <constraint firstItem="rNh-EM-2eR" firstAttribute="top" secondItem="czy-tV-frT" secondAttribute="bottom" constant="60" id="O1H-Rz-HML"/>
                             <constraint firstItem="DCn-bv-2YB" firstAttribute="leading" secondItem="Gul-Kt-OQH" secondAttribute="leading" constant="20" id="RXR-kr-dj8"/>
-                            <constraint firstItem="DCn-bv-2YB" firstAttribute="top" secondItem="Gul-Kt-OQH" secondAttribute="top" id="yWl-h2-gS5"/>
+                            <constraint firstItem="czy-tV-frT" firstAttribute="top" secondItem="DCn-bv-2YB" secondAttribute="bottom" constant="8" symbolic="YES" id="Rzo-GI-eO6"/>
+                            <constraint firstItem="Gul-Kt-OQH" firstAttribute="trailing" secondItem="zcB-CO-90l" secondAttribute="trailing" constant="20" id="WuM-50-cJ1"/>
+                            <constraint firstItem="er1-cm-b4a" firstAttribute="top" secondItem="RaT-In-8Ox" secondAttribute="bottom" constant="30" id="b84-OO-LNB"/>
+                            <constraint firstItem="RaT-In-8Ox" firstAttribute="top" secondItem="rNh-EM-2eR" secondAttribute="bottom" constant="8" symbolic="YES" id="ePh-31-7aE"/>
+                            <constraint firstItem="56L-6e-DrA" firstAttribute="centerX" secondItem="ZYx-ld-EaM" secondAttribute="centerX" id="eyQ-lg-Tfq"/>
+                            <constraint firstItem="RaT-In-8Ox" firstAttribute="leading" secondItem="Gul-Kt-OQH" secondAttribute="leading" constant="20" id="fe2-TN-XPp"/>
+                            <constraint firstItem="JpJ-Ut-XKF" firstAttribute="leading" secondItem="Gul-Kt-OQH" secondAttribute="leading" constant="20" id="gYC-bZ-Iyn"/>
+                            <constraint firstItem="er1-cm-b4a" firstAttribute="leading" secondItem="Gul-Kt-OQH" secondAttribute="leading" constant="20" id="h13-Yp-g5D"/>
+                            <constraint firstItem="Gul-Kt-OQH" firstAttribute="bottom" secondItem="56L-6e-DrA" secondAttribute="bottom" constant="112" id="i4G-WC-1Th"/>
+                            <constraint firstItem="Gul-Kt-OQH" firstAttribute="trailing" secondItem="rNh-EM-2eR" secondAttribute="trailing" constant="20" id="jBA-YL-cTB"/>
+                            <constraint firstItem="JpJ-Ut-XKF" firstAttribute="top" secondItem="zcB-CO-90l" secondAttribute="bottom" constant="8" symbolic="YES" id="vBs-ny-p7D"/>
+                            <constraint firstItem="zcB-CO-90l" firstAttribute="leading" secondItem="Gul-Kt-OQH" secondAttribute="leading" constant="20" id="x1S-y2-8Dm"/>
+                            <constraint firstItem="Gul-Kt-OQH" firstAttribute="trailing" secondItem="er1-cm-b4a" secondAttribute="trailing" constant="20" id="xEb-8T-wmc"/>
+                            <constraint firstItem="czy-tV-frT" firstAttribute="leading" secondItem="Gul-Kt-OQH" secondAttribute="leading" constant="20" id="xG4-0F-TUd"/>
+                            <constraint firstItem="DCn-bv-2YB" firstAttribute="top" secondItem="Gul-Kt-OQH" secondAttribute="top" constant="40" id="yWl-h2-gS5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zee-qL-0NB"/>
+                    <connections>
+                        <outlet property="awayLabel" destination="JpJ-Ut-XKF" id="T1c-aZ-1SU"/>
+                        <outlet property="enterLabel" destination="DCn-bv-2YB" id="pSF-0A-LxR"/>
+                        <outlet property="homeLabel" destination="RaT-In-8Ox" id="tAC-oS-azo"/>
+                        <outlet property="teamnameTextField" destination="czy-tV-frT" id="2mX-lV-HAk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UfG-5H-2tM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

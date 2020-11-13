@@ -17,4 +17,36 @@ class GameSession {
         self.awayTeam = awayTeam
         self.innings = innings
     }
+    
+    var firstBase: Bool = false
+    var secondBase: Bool = false
+    var thirdBase: Bool = false
+    
+    var homeScore: Int = 0
+    var awayScore: Int = 0
+    
+    var onBase: Int = 0
+    
+    var currentHitter: Player?
+    
+    var currentPitcher: Player?
+    
+    
+    
+    func singleHit(){
+        if !firstBase {
+            firstBase = true
+        }
+    }
+    
+    func homerunHit(){
+        var baseCount = 0
+        for base in [firstBase, secondBase, thirdBase]{
+            if base == true {
+                baseCount += 1
+            }
+        }
+        
+    }
+    
 }
